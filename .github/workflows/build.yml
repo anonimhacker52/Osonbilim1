@@ -17,7 +17,7 @@ jobs:
           channel: 'stable'
 
       - name: Yetishmayotgan Android/iOS qismlarini yaratish
-        run: flutter create . --platforms=android --project-name osonbilim
+        run: flutter create . --platforms=android --project-name osonbilim1
 
       - run: flutter pub get
 
@@ -25,5 +25,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: osonbilim-apk
+          name: osonbilim1-apk
           path: build/app/outputs/flutter-apk/app-release.apk
